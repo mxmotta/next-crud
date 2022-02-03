@@ -64,7 +64,9 @@ export default function Home() {
     `}>
       <Layout titulo="Cadastro Simples">
         <div className="flex justify-end">
-          <Botao className="mb-4" cor="blue" onClick={novoCliente}>Novo cliente</Botao>
+          {visivel === 'tabela' ? (
+            <Botao className="mb-4" cor="blue" onClick={novoCliente}>Novo cliente</Botao>
+          ) : ''}
         </div>
         {visivel === 'tabela' ? (
           <Tabela
