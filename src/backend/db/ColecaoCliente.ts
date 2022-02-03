@@ -1,6 +1,5 @@
 import Cliente from "../../core/Cliente";
 import ClienteRepositorio from "../../core/ClienteRepositorio";
-import initMiddleware from "../../core/InitMiddleware";
 import { supabase } from "../config";
 
 export default class ColecaoCliente implements ClienteRepositorio {
